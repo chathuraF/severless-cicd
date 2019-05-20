@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      runtime: nodejs8.10
+      nodejs: 8
     commands:
       - echo installing serverless 
       - npm install -g serverless
