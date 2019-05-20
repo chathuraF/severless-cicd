@@ -1,0 +1,18 @@
+service: cicd # NOTE: update this with your service name
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: us-east-1
+  memorySize: 128
+  timeout: 3
+
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: message
+          ethod: get
