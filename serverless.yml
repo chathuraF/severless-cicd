@@ -11,8 +11,8 @@ provider:
 
 functions:
   hello:
-    handler: handler.hello
+    handler: handler.logger
     events:
       - http:
           path: message
-          ethod: get
+          method: get
